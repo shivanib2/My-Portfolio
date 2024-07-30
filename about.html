@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="index.html"  class="active" id="home-link">Home</a>
+            <a href="about.html" id="about-link">About</a>
+            <a href="services.html" id="services-link">Specializations</a>
+            <a href="portfolio.html" id="portfolio-link">Projects</a>
+            <a href="contact.html" id="contact-link">Contact</a>
+            
+        </nav>
+    </header>
+
+    <section class="about" id="about">
+        <div class="image-container">
+            <img src="assets/myphoto.jpg" alt="shivani bansal" >
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About<span> Me</span></h2>
+            <h3>Software engineer,
+                <br>
+                Frontend and Machine learning Developer!</h3>
+             <br>
+             <p>
+                With a strong foundation in algorithms and data structures, I thrive in collaborative environments and am always eager to learn and adapt. My projects, ranging from dynamic web applications to robust backend systems, reflect my ability to transform complex problems into seamless user experiences.
+                
+            </p>   
+             <span class="dots">...</span>
+           
+                <span class="more-content" style="display: none; font-size: small; color: aliceblue; " >
+                    <p> 
+                
+                    <h1> Signovision- Machine learning and 3-D Modelling</h1>
+                    <h1> Travellopians- Travelling Website</h1>
+                    <br>
+                   
+                    As a proactive learner, I stay abreast of the latest industry trends and best practices, ensuring that my skills remain sharp and relevant. I take pride in my attention to detail and my commitment to writing clean, maintainable code.
+                    <br>
+                    <h1>
+                        Courses on Google Cloud and machine learning. 
+    
+                    </h1>
+                    <br>
+                    My ambition is to leverage my technical expertise and creative mindset to contribute to innovative projects that make a tangible impact. I am excited about the opportunities ahead and look forward to joining a team where I can continue to grow and make a difference.
+                    <br>
+                </p> </span>
+
+         
+           
+               <!-- <a href="#" class="read-more-btn" onclick="toggleReadMore()">Read More</a>
+                -->
+            
+            <a href="#" class="btn" onclick="toggleReadMore()">Read More  </a> 
+           
+             
+        <br>
+
+        
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Shivani| All rights reserved</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#about"><i class='bx bx-up-arrow-alt' ></i></a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="js/script.js"></script>
+    
+    <script>
+        function toggleReadMore() {
+          const dots = document.querySelector('.dots');
+          const moreContent = document.querySelector('.more-content');
+          const btnText = document.querySelector('.btn');
+    
+          if  (moreContent.style.display === 'none' ) {
+           
+            dots.style.display = 'none';
+            moreContent.style.display = 'inline';
+            btnText.textContent = 'Read Less';
+          } 
+
+          else{
+            dots.style.display = 'inline';
+            moreContent.style.display = 'none';
+            btnText.textContent = 'Read More';
+          }
+        }
+      </script>
+</body>
+</html>
